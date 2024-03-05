@@ -1,0 +1,40 @@
+
+
+.experimental-container {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.row {
+  display: flex;
+  margin-bottom: -4px; 
+  justify-content: center; 
+}
+
+.image-link {
+  transition: transform 0.3s ease-in-out; 
+}
+
+.image {
+  width: 100%; 
+  max-width: 550px; 
+  height: auto;
+}
+
+.image-link:hover {
+  transform: scale(1.03); 
+  z-index: 1;
+}
+
+@media screen and (max-width: 767px) {
+  .row {
+    flex-direction: column; 
+    margin-bottom: 0px; 
+  }
+
+  .image-link {
+    margin-bottom: 0px; 
+  }
+}
+

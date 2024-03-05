@@ -1,38 +1,55 @@
-.App {
-  text-align: center;
+.navbar {
+  background-color: #ffffff;
+  color: #fff;
+  padding: 10px 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar .top-row {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-family: 'Futura', sans-serif; 
+  align-items: center; 
+  margin-bottom: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar .top-row .logo {
+  margin-right: 5px;
+  margin-top: 10px;
+  color: #000000; 
+  text-decoration: none; 
+  cursor: pointer; 
+  font-size: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.navbar .top-row .subtitle {
+  margin-left: 5px;
+  margin-top: 10px;
+  color: #000000; 
+  text-decoration: none; 
+  cursor: pointer; 
+  font-size: 15px;
+}
+
+.navbar .bottom-row {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar .bottom-row a {
+  margin: 0 40px;
+  margin-bottom: 10px;
+  color: #9c2a2a;
+  text-decoration: none;
+  font-family: 'Futura', sans-serif; 
+}
+
+@media screen and (max-width: 767px) {
+  .navbar .bottom-row {
+    flex-direction: column; 
+    align-items: center; 
   }
-  to {
-    transform: rotate(360deg);
+
+  .navbar .bottom-row a {
+    margin: 10px 0; 
   }
 }
