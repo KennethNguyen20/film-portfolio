@@ -53,29 +53,29 @@ function AJourneyOutWestPage() {
     <div>
       <VideoLinkPageTemplate title={title} description={description} videoSrc={videoSrc} />
       <div className="row">
-        <img src={Image1} alt="Image 1" style={imageStyle} onClick={() => handleImageClick(Image1)} />
-        <img src={Image2} alt="Image 2" style={imageStyle} onClick={() => handleImageClick(Image2)} />
-        <img src={Image3} alt="Image 3" style={imageStyle} onClick={() => handleImageClick(Image3)} />
+        <img src={Image1} alt="Las Vegas" style={imageStyle} onClick={() => handleImageClick(Image1)} />
+        <img src={Image2} alt="No Enter" style={imageStyle} onClick={() => handleImageClick(Image2)} />
+        <img src={Image3} alt="Bubblegum" style={imageStyle} onClick={() => handleImageClick(Image3)} />
       </div>
       <div className='row'>
-        <img src={Image4} alt="Image 4" style={imageStyle} onClick={() => handleImageClick(Image4)} />
-        <img src={Image5} alt="Image 5" style={imageStyle} onClick={() => handleImageClick(Image5)} />
-        <img src={Image6} alt="Image 6" style={imageStyle} onClick={() => handleImageClick(Image6)} />
+        <img src={Image4} alt="Flag" style={imageStyle} onClick={() => handleImageClick(Image4)} />
+        <img src={Image5} alt="Spillway" style={imageStyle} onClick={() => handleImageClick(Image5)} />
+        <img src={Image6} alt="Hoover Dam" style={imageStyle} onClick={() => handleImageClick(Image6)} />
       </div>
       <div className='row'>
-        <img src={Image7} alt="Image 7" style={imageStyle} onClick={() => handleImageClick(Image7)} />
-        <img src={Image8} alt="Image 8" style={imageStyle} onClick={() => handleImageClick(Image8)} />
-        <img src={Image9} alt="Image 9" style={imageStyle} onClick={() => handleImageClick(Image9)} />
+        <img src={Image7} alt="Mountain" style={imageStyle} onClick={() => handleImageClick(Image7)} />
+        <img src={Image8} alt="Glove" style={imageStyle} onClick={() => handleImageClick(Image8)} />
+        <img src={Image9} alt="Mars" style={imageStyle} onClick={() => handleImageClick(Image9)} />
       </div>
       <div className='row'>
-        <img src={Image10} alt="Image 7" style={imageStyle} onClick={() => handleImageClick(Image10)} />
-        <img src={Image11} alt="Image 8" style={imageStyle} onClick={() => handleImageClick(Image11)} />
-        <img src={Image12} alt="Image 9" style={imageStyle} onClick={() => handleImageClick(Image12)} />
+        <img src={Image10} alt="Bike" style={imageStyle} onClick={() => handleImageClick(Image10)} />
+        <img src={Image11} alt="Wave" style={imageStyle} onClick={() => handleImageClick(Image11)} />
+        <img src={Image12} alt="Face" style={imageStyle} onClick={() => handleImageClick(Image12)} />
       </div>
       
       {modalImage && (
         <div style={modalStyle} onClick={closeModal}>
-          <img src={modalImage} alt="Modal Image" style={{ maxWidth: '90%', maxHeight: '90%' }} />
+          <img src={modalImage} alt="Modal" style={{ maxWidth: '90%', maxHeight: '90%' }} />
         </div>
       )}
 
