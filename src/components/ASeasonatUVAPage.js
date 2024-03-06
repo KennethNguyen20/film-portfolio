@@ -11,7 +11,7 @@ import Image6 from '../assets/images/ASeasonAtUVAStills/Still6.png';
 function ASeasonatUVA() {
   const title = "A Season at UVA";
   const description = "Capturing a transformative semester at the University of Virginia. Taking inspiration from Wes Anderson.";
-  const videoSrc = "https://www.youtube.com/embed/Hqu7oWIkzW4";
+  const videoSrc = "https://www.youtube.com/embed/Hqu7oWIkzW4?vq=hd1080";
 
   const [modalImage, setModalImage] = useState(null);
 

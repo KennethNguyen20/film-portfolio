@@ -11,7 +11,7 @@ import Image6 from '../assets/images/IWantMyVMAGStills/Still6.png';
 function IWantMyVMagPage() {
   const title = "I Want My VMAG";
   const description = "Directed a captivating commercial for the VMagazine Fall 2023 print issue.  Shot using a camcorder to emulate the distinctive feel of the 1980s, blending marketing with the vintage essence of the era.";
-  const videoSrc = "https://www.youtube.com/embed/u5NaMpZ4pDo";
+  const videoSrc = "https://www.youtube.com/embed/u5NaMpZ4pDo?vq=hd1080";
 
   const [modalImage, setModalImage] = useState(null);
 

@@ -11,7 +11,8 @@ import Image6 from '../assets/images/NightlifeArchetypesStills/Still6.png';
 function NightlifeArchetypesPage() {
   const title = "Nightlife Archetypes";
   const description = "Showcasing the vibrant world of nightlife fashion and the diverse archetypes created from it. A dynamic exploration of style and identity.";
-  const videoSrc = "https://www.youtube.com/embed/irWNFbIYBZ4";
+  const videoSrc = "https://www.youtube.com/embed/irWNFbIYBZ4?vq=hd1080";
+
 
   const [modalImage, setModalImage] = useState(null);
 
