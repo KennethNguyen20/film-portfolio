@@ -1,7 +1,7 @@
 import React from 'react';
 import aboutPic from '../assets/images/aboutPic.JPG'; 
 import aboutPic3 from '../assets/images/about3.jpg'; 
-import resumePDF from '../assets/files/KennethFilmResume.pdf'; 
+import resumePDF from '../assets/files/NguyenKennethFilmResume.pdf'; 
 import './About.css'; 
 
 function About() {
