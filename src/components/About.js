@@ -16,7 +16,7 @@ function About() {
         </div>
       </div>
       <div className="about-links">
-        <a href="mailto:KeywordKenneth@gmail.com">Email: KeywordKenneth@gmail.com</a>
+        <a href="mailto:kennethknguyen7@gmail.com">Email: kennethknguyen7@gmail.com</a>
         <a href={resumePDF} target="_blank" rel="noopener noreferrer">View Resume</a>
       </div>
       <div className="about-content">
