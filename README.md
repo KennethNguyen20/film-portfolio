@@ -1,6 +1,6 @@
 # Portfolio
 
-View live at [kennethknguyen.com](https://kennethknguyen.netlify.app)
+View live at [kennethknguyen.com](https://kennethknguyen.com)
 
 ## Technologies Used
 
