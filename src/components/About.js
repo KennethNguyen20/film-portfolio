@@ -1,6 +1,6 @@
 import React from 'react';
 import aboutPic from '../assets/images/aboutPic.JPG'; 
-import aboutPic3 from '../assets/images/about3.jpg'; 
+import bolexPic from '../assets/images/bolex.jpg'; 
 import resumePDF from '../assets/files/NguyenKennethFilmResume.pdf'; 
 import './About.css'; 
 
@@ -12,7 +12,7 @@ function About() {
           <img src={aboutPic} alt="Kenneth Nguyen" />
         </div>
         <div className="about-image">
-          <img src={aboutPic3} alt="Kenneth Nguyen" />
+          <img src={bolexPic} alt="Kenneth Nguyen" />
         </div>
       </div>
       <div className="about-links">

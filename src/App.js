@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css'; 
 import NavBar from './components/NavBar'; 
@@ -11,8 +11,11 @@ import NightlifeArchetypesPage from './components/NightlifeArchetypes'
 import ASeasonatUVA from './components/ASeasonatUVAPage';
 import BottomBar from './components/BottomBar';
 
-
 function App() {
+  useEffect(() => {
+    document.title = "Kenneth Nguyen - Cinematographer";
+  }, []);
+
   return (
     <Router>
       <div>
