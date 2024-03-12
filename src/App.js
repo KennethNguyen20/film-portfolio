@@ -22,7 +22,6 @@ function App() {
         <NavBar /> 
         <Routes> 
           <Route exact path="/" element={<ExperimentalPage />} /> 
-          <Route path="/experimental" element={<ExperimentalPage />} /> 
           <Route path="/about" element={<About />} /> 
           <Route path="/narrative" element={<NarrativePage/>}/>
           <Route path="/i-want-my-vmag" element={<IWantMyVmagPage />} /> 

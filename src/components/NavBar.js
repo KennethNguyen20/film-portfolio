@@ -10,8 +10,8 @@ function NavBar() {
       </div>
       <div className="bottom-row">
         {/* <NavLink to="/" className="nav-link">Featured</NavLink> */}
+        <NavLink to="/">Home</NavLink>
         <NavLink to="/narrative">Narrative</NavLink>
-        <NavLink to="/experimental">Experimental</NavLink>
         <NavLink to="/about">About</NavLink>
         
       </div>
