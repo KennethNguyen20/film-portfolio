@@ -5,11 +5,22 @@ import IWantMyVmagPhoto from '../assets/images/IWantMyVMAGPhoto.png';
 import JourneyOutWestPhoto from '../assets/images/JourneyOutWestPhoto.png';
 import NightlifePhoto from '../assets/images/NightlifePhoto.png';
 import ASeasonatUVAPhoto from '../assets/images/SeasonPhoto.png';
+import PeaceOfMindPhoto from '../assets/images/PeaceOfMindThumb4.jpg';
+import NatureHarmonyPhoto from '../assets/images/NatureHaikuThumb4.jpg';
 
 function ExperimentalPage() {
   return (
     <div className="experimental-container">
       {/* Top row */}
+      <div className="row">
+        <Link to="/peace-of-mind" className="image-link">
+          <img src={PeaceOfMindPhoto} alt="Peace of Mind" className="image" />
+        </Link>
+        <Link to="/nature-harmony" className="image-link">
+          <img src={NatureHarmonyPhoto} alt="Nature's Harmony" className="image" />
+        </Link>
+      </div>
+      {/* Middle row */}
       <div className="row">
         <Link to="/i-want-my-vmag" className="image-link">
           <img src={IWantMyVmagPhoto} alt="I Want My Vmag" className="image" />

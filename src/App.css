@@ -1,5 +1,5 @@
 .navbar {
-  background-color: #ffffff;
+  background-color: #111111;
   color: #fff;
   padding: 10px 20px;
 }
@@ -12,19 +12,21 @@
   margin-bottom: 10px;
 }
 
+/* KENNETH NGUYEN title*/
 .navbar .top-row .logo {
   margin-right: 5px;
   margin-top: 10px;
-  color: #000000; 
+  color: #ffffff; 
   text-decoration: none; 
   cursor: pointer; 
   font-size: 30px;
 }
 
+/*CINEMATOGRAPHER subtitle*/
 .navbar .top-row .subtitle {
   margin-left: 5px;
   margin-top: 10px;
-  color: #000000; 
+  color: #ffffff; 
   text-decoration: none; 
   cursor: pointer; 
   font-size: 15px;

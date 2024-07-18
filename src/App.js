@@ -10,6 +10,9 @@ import AJourneyOutWestPage from './components/AJourneyOutWestPage';
 import NightlifeArchetypesPage from './components/NightlifeArchetypes'
 import ASeasonatUVA from './components/ASeasonatUVAPage';
 import BottomBar from './components/BottomBar';
+import ISeeYouPage from './components/ISeeYouPage';
+import PeaceOfMindPage from './components/PeaceOfMindPage';
+import NatureHarmonyPage from './components/NatureHarmonyPage';
 
 function App() {
   useEffect(() => {
@@ -27,7 +30,10 @@ function App() {
           <Route path="/i-want-my-vmag" element={<IWantMyVmagPage />} /> 
           <Route path="/a-journey-out-west" element={<AJourneyOutWestPage />} /> 
           <Route path="/nightlife-archetypes" element={<NightlifeArchetypesPage />} /> 
-          <Route path="/a-season-at-uva" element={<ASeasonatUVA />} /> 
+          <Route path="/a-season-at-uva" element={<ASeasonatUVA />} />
+          <Route path='/i-see-you' element={<ISeeYouPage/>} />
+          <Route path='/peace-of-mind' element={<PeaceOfMindPage/>} />
+          <Route path='/nature-harmony' element={<NatureHarmonyPage/>} />
           
         </Routes>
         <BottomBar/>

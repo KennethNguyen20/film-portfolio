@@ -15,7 +15,7 @@ import Image11 from '../assets/images/AJourneyOutWestStills/Still11.png';
 import Image12 from '../assets/images/AJourneyOutWestStills/Still12.png';
 
 function AJourneyOutWestPage() {
-  const title = "A Journey Out West";
+  const title = "A JOURNEY OUT WEST";
   const description = "Adventures through Las Vegas, Hoover Dam, Grand Canyon, and Wonderspaces in Arizona. Showcasing the alluring landscapes of the American Southwest.";
   const videoSrc = "https://www.youtube.com/embed/u_tBqiVd-Qs?vq=hd1080";
 

@@ -12,13 +12,20 @@
   justify-content: center; 
 }
 
+.cropped-image {
+  width: calc(100% - 100px); /* Reduce width by 1px */
+  height: auto;
+  overflow: hidden;
+}
+
+
 .image-link {
   transition: transform 0.3s ease-in-out; 
 }
 
 .image {
   width: 100%; 
-  max-width: 550px; 
+  max-width: 700px; 
   height: auto;
 }
 
