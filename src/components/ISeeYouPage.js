@@ -38,6 +38,22 @@ function ISeeYouPage() {
           </div>
         ))}
       </div>
+      {/* Media query for smaller devices */}
+      <style>
+        {`
+          @media screen and (max-width: 767px) {
+            iframe {
+              width: 95%; /* Make the video fill the width of the container */
+              height: 300px;
+              
+            }
+            row {
+              display: row; /* Change display to block for smaller devices */
+            }
+            
+          }
+        `}
+      </style>
     </div>
   );
 }

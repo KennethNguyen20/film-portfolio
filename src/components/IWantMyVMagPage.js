@@ -65,16 +65,24 @@ function IWantMyVMagPage() {
       {/* Media query for smaller devices */}
       <style>
         {`
+          .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+          }
           @media screen and (max-width: 767px) {
             iframe {
-              width: 100%; /* Make the video fill the width of the container */
+              width: 95%; /* Make the video fill the width of the container */
               height: 300px;
+            }
+            .row {
+              flex-direction: column;
+              align-items: center;
+            }
+            .row img {
+              width: 100%;
               
             }
-            row {
-              display: row; /* Change display to block for smaller devices */
-            }
-            
           }
         `}
       </style>
