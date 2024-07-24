@@ -5,14 +5,16 @@ import ISeeYouStillImage from '../assets/images/ISeeYouStill.jpg'; // Import you
 function NarrativePage() {
   return (
     <div style={{ textAlign: 'center', marginTop: '30px', fontFamily: 'Futura, sans-serif' }}>
-      
-      <Link to="/i-see-you" className="image-link" style={{ display: 'block', margin: '0 auto' }}>
-        <img src={ISeeYouStillImage} alt="ISeeYouStill" className="narrative-image" />
+      <Link to="/i-see-you" className="image-link" style={{ display: 'block', margin: '0 auto', position: 'relative' }}>
+        <img src={ISeeYouStillImage} alt="I See You Still" className="narrative-image" />
+        <div className="image-title">I See You</div>
       </Link>
       <style>
         {`
           .image-link {
             transition: transform 0.3s ease-in-out; 
+            position: relative;
+            display: inline-block;
           }
 
           .image-link:hover {
@@ -26,6 +28,24 @@ function NarrativePage() {
             height: auto;
             display: block;
             margin: 0 auto;
+          }
+
+          .image-title {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-align: center;
+            font-family: 'Futura', sans-serif;
+            font-size: 16px;
+            text-transform: uppercase;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+          }
+
+          .image-link:hover .image-title {
+            opacity: 1;
           }
         `}
       </style>

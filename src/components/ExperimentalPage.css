@@ -1,41 +1,76 @@
-
-
 .experimental-container {
   display: flex;
   flex-direction: column;
-  
 }
 
 .row {
   display: flex;
-  margin-bottom: -4px; 
-  justify-content: center; 
+  margin-bottom: -4px;
+  justify-content: center;
 }
 
-
 .image-link {
-  transition: transform 0.3s ease-in-out; 
+  transition: transform 0.3s ease-in-out;
+  position: relative; /* Ensure the overlay is positioned relative to the image */
 }
 
 .image {
-  width: 100%; 
-  max-width: 500px; 
+  width: 100%;
+  max-width: 500px;
   height: auto;
 }
 
 .image-link:hover {
-  transform: scale(1.03); 
+  transform: scale(1.03);
   z-index: 1;
+}
+
+.image-overlay-container {
+  position: relative;
+}
+
+.image-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-family: 'Futura', sans-serif;
+  font-size: 16px;
+  text-transform: uppercase; /* All caps */
+  opacity: 0; /* Hidden by default */
+  transition: opacity 0.3s ease-in-out;
+}
+
+.image-overlay-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.image-link:hover .image-title {
+  opacity: 1; /* Show title on hover */
+}
+
+.image-link:hover .image-overlay-container::before {
+  opacity: 1; /* Shade the entire image on hover */
 }
 
 @media screen and (max-width: 767px) {
   .row {
-    flex-direction: column; 
-    margin-bottom: 0px; 
+    flex-direction: column;
+    margin-bottom: 0px;
   }
 
   .image-link {
-    margin-bottom: 0px; 
+    margin-bottom: 0px;
   }
 }
-
