@@ -5,6 +5,7 @@ import NavBar from './components/NavBar';
 import ExperimentalPage from './components/ExperimentalPage'; 
 import About from './components/About'; 
 import NarrativePage from './components/NarrativePage';
+import CommercialPage from './components/CommercialPage';
 import IWantMyVmagPage from './components/IWantMyVMagPage';
 import AJourneyOutWestPage from './components/AJourneyOutWestPage';
 import NightlifeArchetypesPage from './components/NightlifeArchetypes'
@@ -13,6 +14,8 @@ import BottomBar from './components/BottomBar';
 import ISeeYouPage from './components/ISeeYouPage';
 import PeaceOfMindPage from './components/PeaceOfMindPage';
 import NatureHarmonyPage from './components/NatureHarmonyPage';
+import JetsweatPage from './components/Jetsweat';
+import TheMothPage from './components/TheMothPage';
 
 function App() {
   useEffect(() => {
@@ -27,6 +30,7 @@ function App() {
           <Route exact path="/" element={<ExperimentalPage />} /> 
           <Route path="/about" element={<About />} /> 
           <Route path="/narrative" element={<NarrativePage/>}/>
+          <Route path="/commercial" element={<CommercialPage/>}/>
           <Route path="/i-want-my-vmag" element={<IWantMyVmagPage />} /> 
           <Route path="/a-journey-out-west" element={<AJourneyOutWestPage />} /> 
           <Route path="/nightlife-archetypes" element={<NightlifeArchetypesPage />} /> 
@@ -34,6 +38,8 @@ function App() {
           <Route path='/i-see-you' element={<ISeeYouPage/>} />
           <Route path='/peace-of-mind' element={<PeaceOfMindPage/>} />
           <Route path='/nature-harmony' element={<NatureHarmonyPage/>} />
+          <Route path='/jetsweat' element={<JetsweatPage/>}/>
+          <Route path='/themoth' element={<TheMothPage/>}/>
           
         </Routes>
         <BottomBar/>
