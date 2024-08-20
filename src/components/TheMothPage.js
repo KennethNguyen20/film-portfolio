@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+
 import VideoLinkPageTemplate from './VideoLinkPageTemplate';
 
 function TheMothPage() {
@@ -22,24 +22,9 @@ function TheMothPage() {
     { name: "GEORGE SUMNER" }
   ];
 
-  const [modalImage, setModalImage] = useState(null);
+  
 
-  const closeModal = () => {
-    setModalImage(null);
-  };
-
-  const modalStyle = {
-    position: 'fixed',
-    top: 0,
-    left: 0,
-    width: '100%',
-    height: '100%',
-    backgroundColor: 'rgba(0, 0, 0, 0.7)',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    zIndex: 9999,
-  };
+ 
 
   return (
     <div>
