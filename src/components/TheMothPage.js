@@ -1,4 +1,3 @@
-
 import VideoLinkPageTemplate from './VideoLinkPageTemplate';
 
 function TheMothPage() {
@@ -22,17 +21,13 @@ function TheMothPage() {
     { name: "GEORGE SUMNER" }
   ];
 
-  
-
- 
-
   return (
-    <div>
+    <div className="the-moth-page">
       <VideoLinkPageTemplate title={title} description={description} videoSrc={videoSrc} />
 
       <div style={{ marginTop: '20px', fontFamily: 'Futura', textAlign: 'center', color: 'white' }}>
         <h3>CREDITS</h3>
-        <div style={{ maxWidth: '800px', margin: '0 auto', fontSize: '18px' }}>
+        <div className="credits-container">
           {credits.map((credit, index) => (
             <div key={index} style={{ display: 'flex', justifyContent: 'space-between', margin: '10px 0' }}>
               <div style={{ textAlign: 'left', flex: '1' }}>{credit.role}</div>
@@ -51,22 +46,48 @@ function TheMothPage() {
       {/* Media query for smaller devices */}
       <style>
         {`
-          .row {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+          .the-moth-page {
+            padding: 0; /* Default padding for larger screens */
           }
+          
+          .credits-container {
+            max-width: 800px; /* Ensures content doesn't stretch too wide on larger screens */
+            margin: 0 auto; /* Center the container */
+          }
+
           @media screen and (max-width: 767px) {
-            iframe {
-              width: 95%; /* Make the video fill the width of the container */
-              height: 300px;
+            .the-moth-page {
+              padding: 0 10px; /* Add padding to sides for smaller devices */
             }
+
+            iframe {
+              width: 100%; /* Make the video fill the width of the container */
+              height: 400px; /* Make the video taller to avoid squishing */
+            }
+            
             .row {
               flex-direction: column;
               align-items: center;
+              margin: 0;
+              padding: 0 10px; /* Add padding to sides */
             }
-            .row img {
-              width: 100%;
+            
+            .image-link {
+              margin-bottom: 0;
+            }
+            
+            .image-title {
+              font-size: 14px; /* Adjust font size for smaller screens */
+              padding: 5px; /* Adjust padding for smaller screens */
+            }
+            
+            .image-overlay-container::before {
+              background-color: rgba(0, 0, 0, 0.7); /* Adjust overlay opacity for better readability */
+            }
+            
+            .credits-container {
+              font-size: 16px; /* Adjust font size for credits */
+              padding: 0 10px; /* Add padding to sides for smaller devices */
             }
           }
         `}

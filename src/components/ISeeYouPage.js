@@ -23,12 +23,12 @@ function ISeeYouPage() {
   ];
 
   return (
-    <div>
+    <div className="i-see-you-page">
       <VideoLinkPageTemplate title={title} description={description} videoSrc={videoSrc} />
       
-      <div style={{ marginTop: '20px', fontFamily: 'Futura', textAlign: 'center', color: 'white' }}>
+      <div className="credits-section">
         <h3>CREDITS</h3>
-        <div style={{ maxWidth: '800px', margin: '0 auto', fontSize: '18px' }}>
+        <div className="credits-container">
           {credits.map((credit, index) => (
             <div key={index} style={{ display: 'flex', justifyContent: 'space-between', margin: '10px 0' }}>
               <div style={{ textAlign: 'left', flex: '1' }}>{credit.role}</div>
@@ -37,7 +37,7 @@ function ISeeYouPage() {
           ))}
         </div>
         <h3>KEY CAST</h3>
-        <div style={{ maxWidth: '800px', margin: '0 auto', fontSize: '18px' }}>
+        <div className="keycast-container">
           {keycast.map((cast, index) => (
             <div key={index} style={{ display: 'flex', justifyContent: 'space-between', margin: '10px 0' }}>
               <div style={{ textAlign: 'left', flex: '1' }}>{cast.role}</div>
@@ -50,16 +50,32 @@ function ISeeYouPage() {
       {/* Media query for smaller devices */}
       <style>
         {`
+          .i-see-you-page {
+            color: white; /* Ensure text is white */
+            font-family: 'Futura', sans-serif; /* Ensure consistent font */
+            padding: 0; /* Default padding for larger screens */
+          }
+          
+          .credits-container,
+          .keycast-container {
+            max-width: 800px; /* Ensure content doesn't stretch too wide on larger screens */
+            margin: 0 auto; /* Center the container */
+          }
+
           @media screen and (max-width: 767px) {
+            .i-see-you-page {
+              padding: 0 10px; /* Add padding to sides for smaller devices */
+            }
+
             iframe {
-              width: 95%; /* Make the video fill the width of the container */
-              height: 300px;
+              width: 100%; /* Make the video fill the width of the container */
+              height: 500px; /* Adjust height to avoid squishing */
             }
-            .row {
-              display: block; /* Stack items vertically on smaller devices */
-            }
-            .row img {
-              width: 100%;
+            
+            .credits-container,
+            .keycast-container {
+              font-size: 16px; /* Adjust font size for credits and key cast */
+              padding: 0 10px; /* Add padding to sides */
             }
           }
         `}
