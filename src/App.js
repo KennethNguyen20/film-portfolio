@@ -19,7 +19,7 @@ import TheMothPage from './components/TheMothPage';
 
 function App() {
   useEffect(() => {
-    document.title = "Kenneth Nguyen - Cinematographer";
+    document.title = "KENNETH KIEN NGUYEN";
   }, []);
 
   return (
