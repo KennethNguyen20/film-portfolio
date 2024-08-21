@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import JetsweatPhoto from '../assets/images/JetsweatThumb2.jpg';
 import MothPhoto from '../assets/images/MothThumb.jpg';
+import IWantMyVmagPhoto from '../assets/images/IWantMyVMAGPhoto.png';
 
 function CommercialPage() {
   const containerStyle = {
@@ -37,6 +38,14 @@ function CommercialPage() {
           <div className="image-overlay-container">
             <img src={MothPhoto} alt="The Moth" style={imageStyle} />
             <div className="image-title">The Moth</div>
+          </div>
+        </Link>
+      </div>
+      <div style={rowStyle}>
+        <Link to="/i-want-my-vmag" className="image-link">
+          <div className="image-overlay-container">
+            <img src={IWantMyVmagPhoto} alt="I Want My Vmag" style={imageStyle} />
+            <div className="image-title">I Want My Vmag</div>
           </div>
         </Link>
       </div>
