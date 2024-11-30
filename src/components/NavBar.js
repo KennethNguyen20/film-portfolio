@@ -5,8 +5,8 @@ function NavBar() {
   return (
     <div className="navbar">
       <div className="top-row">
-        <NavLink exact to="/" className="logo">KENNETH KIEN NGUYEN</NavLink>
-        <NavLink exact to="/" className="subtitle">CINEMATOGRAPHER</NavLink>
+        <NavLink exact to="/" className="logo">KENNETH NGUYEN</NavLink>
+        <NavLink exact to="/" className="subtitle">FILM PORTFOLIO</NavLink>
       </div>
       <div className="bottom-row">
         {/* <NavLink to="/" className="nav-link">Featured</NavLink> */}
