@@ -25,7 +25,7 @@ function TheMothPage() {
     <div className="the-moth-page">
       <VideoLinkPageTemplate title={title} description={description} videoSrc={videoSrc} />
 
-      <div style={{ marginTop: '20px', fontFamily: 'Futura', textAlign: 'center', color: 'white' }}>
+      <div style={{ marginTop: '20px', fontFamily: 'Futura', textAlign: 'center', color: 'black' }}>
         <h3>CREDITS</h3>
         <div className="credits-container">
           {credits.map((credit, index) => (

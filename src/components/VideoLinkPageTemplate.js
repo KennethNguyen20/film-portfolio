@@ -2,7 +2,7 @@ import React from 'react';
 
 function VideoLinkPageTemplate({ title, description, videoSrc }) {
   return (
-    <div style={{ textAlign: 'center', fontFamily: 'Futura', position: 'relative', color: 'white' }}>
+    <div style={{ textAlign: 'center', fontFamily: 'Futura', position: 'relative', color: 'black' }}>
       <iframe width="900" height="506" src={videoSrc} title={title} frameBorder="0" allowFullScreen></iframe>
       <h2>{title}</h2>
       <div style={{ maxWidth: '800px', margin: '0 auto', lineHeight: '2' }}>

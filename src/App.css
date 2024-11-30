@@ -1,5 +1,5 @@
 .navbar {
-  background-color: #071e26;
+  background-color: #dedfd9;
   color: #fff;
   padding: 10px 20px;
   max-width: 100%;
@@ -18,7 +18,7 @@
 .navbar .top-row .logo {
   margin-right: 5px;
   margin-top: 10px;
-  color: #ffffff; 
+  color: #000000; 
   text-decoration: none; 
   cursor: pointer; 
   font-size: 30px;
@@ -28,7 +28,7 @@
 .navbar .top-row .subtitle {
   margin-left: 5px;
   margin-top: 10px;
-  color: #ffffff; 
+  color: #000000; 
   text-decoration: none; 
   cursor: pointer; 
   font-size: 25px;
