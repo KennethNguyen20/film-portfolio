@@ -7,10 +7,27 @@ import NightlifePhoto from '../assets/images/NightlifePhoto.png';
 import ASeasonatUVAPhoto from '../assets/images/SeasonPhoto.png';
 import PeaceOfMindPhoto from '../assets/images/PeaceOfMindThumb4.jpg';
 import NatureHarmonyPhoto from '../assets/images/NatureHaikuThumb4.jpg';
+import HotelFictionPhoto from '../assets/images/HotelFictionThumb.jpg'
+import FishWaterPhoto from '../assets/images/FishWaterThumb.jpg'
+
 
 function ExperimentalPage() {
   return (
     <div className="experimental-container">
+      <div className="row">
+        <Link to="/fish-out-of-water" className="image-link">
+          <div className="image-overlay-container">
+            <img src={FishWaterPhoto} alt="Fish Out of Water" className="image" />
+            <div className="image-title">Fish Out of Water</div>
+          </div>
+        </Link>
+        <Link to="/hotel-fiction" className="image-link">
+          <div className="image-overlay-container">
+            <img src={HotelFictionPhoto} alt="Hotel Fiction" className="image" />
+            <div className="image-title">Hotel Fiction</div>
+          </div>
+        </Link>
+      </div>
       {/* Top row */}
       <div className="row">
         <Link to="/peace-of-mind" className="image-link">

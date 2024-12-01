@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import JetsweatPhoto from '../assets/images/JetsweatThumb2.jpg';
 import MothPhoto from '../assets/images/MothThumb.jpg';
 import IWantMyVmagPhoto from '../assets/images/IWantMyVMAGPhoto.png';
+import FishWaterPhoto from '../assets/images/fishwaterborder.jpg';
 
 function CommercialPage() {
   const containerStyle = {
@@ -25,6 +26,14 @@ function CommercialPage() {
 
   return (
     <div style={containerStyle}>
+      <div style={rowStyle}>
+        <Link to="/fish-out-of-water" className="image-link">
+          <div className="image-overlay-container">
+            <img src={FishWaterPhoto} alt="Fish Out of Water" style={imageStyle} />
+            <div className="image-title">Fish Out of Water</div>
+          </div>
+        </Link>
+      </div>
       <div style={rowStyle}>
         <Link to="/jetsweat" className="image-link">
           <div className="image-overlay-container">

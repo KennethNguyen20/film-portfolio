@@ -16,10 +16,12 @@ import PeaceOfMindPage from './components/PeaceOfMindPage';
 import NatureHarmonyPage from './components/NatureHarmonyPage';
 import JetsweatPage from './components/Jetsweat';
 import TheMothPage from './components/TheMothPage';
+import VMagWater from './components/VMagWater';
+import HotelFiction from './components/HotelFiction';
 
 function App() {
   useEffect(() => {
-    document.title = "KENNETH KIEN NGUYEN";
+    document.title = "KENNETH NGUYEN";
   }, []);
 
   return (
@@ -40,6 +42,8 @@ function App() {
           <Route path='/nature-harmony' element={<NatureHarmonyPage/>} />
           <Route path='/jetsweat' element={<JetsweatPage/>}/>
           <Route path='/themoth' element={<TheMothPage/>}/>
+          <Route path='/fish-out-of-water' element={<VMagWater/>}/>
+          <Route path='/hotel-fiction' element={<HotelFiction/>}/>
           
         </Routes>
         <BottomBar/>
