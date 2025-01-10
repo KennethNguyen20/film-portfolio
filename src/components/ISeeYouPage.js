@@ -8,10 +8,10 @@ function ISeeYouPage() {
 
   const credits = [
     { role: "Director", name: "ANSH PATHAPADU" },
-    { role: "Director of Photography", name: "KENNETH KIEN NGUYEN" },
+    { role: "Director of Photography", name: "KENNETH NGUYEN" },
     { role: "Producer", name: "ROWAN ROSENBLUM" },
     { role: "Music", name: "ALEX MATTERN" },
-    { role: "Editors", names: ["KENNETH KIEN NGUYEN and ANSH PATH"] }
+    { role: "Editors", names: ["KENNETH NGUYEN and ANSH PATH"] }
   ];
 
   const keycast = [
@@ -22,26 +22,39 @@ function ISeeYouPage() {
     { role: "Robert", name: "JIM MONE" }
   ];
 
+  const festivals = [
+    { name: "Tokyo International Short Film Festival 2024", note: "Official Selection" },
+    { name: "Cinéma Royale International Film Festival 2024", note: "Official Selection" }
+  ];
+
   return (
     <div>
       <VideoLinkPageTemplate title={title} description={description} videoSrc={videoSrc} />
       
-      <div style={{ marginTop: '20px', fontFamily: 'Futura', textAlign: 'center', color: 'black' }}>
+      <div style={{ margin: '20px auto', fontFamily: 'Futura', maxWidth: '800px', color: 'black', textAlign: 'left' }}>
         <h3>CREDITS</h3>
-        <div style={{ maxWidth: '800px', margin: '0 auto', fontSize: '18px' }}>
+        <div style={{ fontSize: '16px' }}>
           {credits.map((credit, index) => (
             <div key={index} style={{ display: 'flex', justifyContent: 'space-between', margin: '10px 0' }}>
-              <div style={{ textAlign: 'left', flex: '1' }}>{credit.role}</div>
-              <div style={{ textAlign: 'right', flex: '1' }}>{Array.isArray(credit.names) ? credit.names.join(', ') : credit.name}</div>
+              <div>{credit.role}</div>
+              <div>{Array.isArray(credit.names) ? credit.names.join(', ') : credit.name}</div>
             </div>
           ))}
         </div>
         <h3>KEY CAST</h3>
-        <div style={{ maxWidth: '800px', margin: '0 auto', fontSize: '18px' }}>
+        <div style={{ fontSize: '16px' }}>
           {keycast.map((cast, index) => (
             <div key={index} style={{ display: 'flex', justifyContent: 'space-between', margin: '10px 0' }}>
-              <div style={{ textAlign: 'left', flex: '1' }}>{cast.role}</div>
-              <div style={{ textAlign: 'right', flex: '1' }}>{cast.name}</div>
+              <div>{cast.role}</div>
+              <div>{cast.name}</div>
+            </div>
+          ))}
+        </div>
+        <h3>FESTIVALS</h3>
+        <div style={{ fontSize: '16px', lineHeight: '2' }}>
+          {festivals.map((festival, index) => (
+            <div key={index}>
+              {festival.name}, <span style={{ fontStyle: 'italic' }}>{festival.note}</span>
             </div>
           ))}
         </div>
@@ -55,11 +68,9 @@ function ISeeYouPage() {
               width: 95%; /* Make the video fill the width of the container */
               height: 300px;
             }
-            .row {
-              display: block; /* Stack items vertically on smaller devices */
-            }
-            .row img {
-              width: 100%;
+            div {
+              margin-left: 20px;
+              margin-right: 20px;
             }
           }
         `}
