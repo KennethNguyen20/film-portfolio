@@ -12,6 +12,7 @@ import NightlifeArchetypesPage from './components/NightlifeArchetypes'
 import ASeasonatUVA from './components/ASeasonatUVAPage';
 import BottomBar from './components/BottomBar';
 import ISeeYouPage from './components/ISeeYouPage';
+import Breathe from './components/Breathe';
 import PeaceOfMindPage from './components/PeaceOfMindPage';
 import NatureHarmonyPage from './components/NatureHarmonyPage';
 import JetsweatPage from './components/Jetsweat';
@@ -38,6 +39,7 @@ function App() {
           <Route path="/nightlife-archetypes" element={<NightlifeArchetypesPage />} /> 
           <Route path="/a-season-at-uva" element={<ASeasonatUVA />} />
           <Route path='/i-see-you' element={<ISeeYouPage/>} />
+          <Route path='/breathe' element={<Breathe/>} />
           <Route path='/peace-of-mind' element={<PeaceOfMindPage/>} />
           <Route path='/nature-harmony' element={<NatureHarmonyPage/>} />
           <Route path='/jetsweat' element={<JetsweatPage/>}/>

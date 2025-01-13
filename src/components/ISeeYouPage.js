@@ -2,7 +2,8 @@ import React from 'react';
 import VideoLinkPageTemplate from './VideoLinkPageTemplate';
 
 function ISeeYouPage() {
-  const title = "I SEE YOU";
+  const title = "I SEE YOU (2023)";
+  const subtitle = "Short Film, 15mins";
   const description = "Facing imminent blindness, Andy stubbornly insists on handling his condition alone. However, his sense of independence is challenged when his sister Anna comes to visit.";
   const videoSrc = "https://www.youtube.com/embed/SYOULxypMoA";
 
@@ -29,7 +30,7 @@ function ISeeYouPage() {
 
   return (
     <div>
-      <VideoLinkPageTemplate title={title} description={description} videoSrc={videoSrc} />
+      <VideoLinkPageTemplate title={title} subtitle={subtitle} description={description} videoSrc={videoSrc} />
       
       <div style={{ margin: '20px auto', fontFamily: 'Futura', maxWidth: '800px', color: 'black', textAlign: 'left' }}>
         <h3>CREDITS</h3>

@@ -1,14 +1,23 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import ISeeYouStillImage from '../assets/images/ISeeYouStill.jpg'; // Import your image
+import ISeeYouStillImage from '../assets/images/ISeeYouStill.jpg';
+import BreatheStillImage from '../assets/images/BreatheStill.jpg';
 
 function NarrativePage() {
   return (
     <div style={{ textAlign: 'center', marginTop: '30px', fontFamily: 'Futura, sans-serif' }}>
-      <Link to="/i-see-you" className="image-link" style={{ display: 'block', margin: '0 auto', position: 'relative' }}>
+      {/* Breathe Page Link */}
+      <Link to="/breathe" className="image-link" style={{ display: 'block', margin: '0 auto', position: 'relative' }}>
+        <img src={BreatheStillImage} alt="Breathe Still" className="narrative-image" />
+        <div className="image-title">Breathe</div>
+      </Link>
+
+      {/* I See You Page Link */}
+      <Link to="/i-see-you" className="image-link" style={{ display: 'block', margin: '30px auto 0', position: 'relative' }}>
         <img src={ISeeYouStillImage} alt="I See You Still" className="narrative-image" />
         <div className="image-title">I See You</div>
       </Link>
+
       <style>
         {`
           .image-link {
