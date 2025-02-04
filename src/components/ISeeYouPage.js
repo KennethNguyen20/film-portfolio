@@ -33,6 +33,14 @@ function ISeeYouPage() {
       <VideoLinkPageTemplate title={title} subtitle={subtitle} description={description} videoSrc={videoSrc} />
       
       <div style={{ margin: '20px auto', fontFamily: 'Futura', maxWidth: '800px', color: 'black', textAlign: 'left' }}>
+      <h3>FESTIVALS</h3>
+        <div style={{ fontSize: '16px', lineHeight: '2' }}>
+          {festivals.map((festival, index) => (
+            <div key={index}>
+              {festival.name}, <span style={{ fontStyle: 'italic' }}>{festival.note}</span>
+            </div>
+          ))}
+        </div>
         <h3>CREDITS</h3>
         <div style={{ fontSize: '16px' }}>
           {credits.map((credit, index) => (
@@ -51,14 +59,7 @@ function ISeeYouPage() {
             </div>
           ))}
         </div>
-        <h3>FESTIVALS</h3>
-        <div style={{ fontSize: '16px', lineHeight: '2' }}>
-          {festivals.map((festival, index) => (
-            <div key={index}>
-              {festival.name}, <span style={{ fontStyle: 'italic' }}>{festival.note}</span>
-            </div>
-          ))}
-        </div>
+        
       </div>
 
       {/* Media query for smaller devices */}
