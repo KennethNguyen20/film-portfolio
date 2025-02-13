@@ -4,7 +4,7 @@ import BreatheStillImage from '../assets/images/BreatheStill.jpg';
 
 function Breathe() {
   const title = "BREATHE (2025)";
-  const subtitle = "In Post-Production";
+  const subtitle = "Short Film, 7mins";
   const description = "A young man grappling with the death of his brother, learns to confront his pain and comfort his innocent sister, finding unexpected solace in their shared vulnerability.";
   const imageSrc = BreatheStillImage;
 
