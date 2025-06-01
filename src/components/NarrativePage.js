@@ -3,12 +3,19 @@ import { Link } from 'react-router-dom';
 import ISeeYouStillImage from '../assets/images/ISeeYouStill.jpg';
 import BreatheStillImage from '../assets/images/BreatheStill.jpg';
 import PleaseHoldStillImage from '../assets/images/PleaseHoldStill.jpg';
+import ToWhomILetGoStillImage from '../assets/images/ToWhomILetGoStill.jpg';
 
 function NarrativePage() {
   return (
     <div style={{ textAlign: 'center', marginTop: '30px', fontFamily: 'Futura, sans-serif' }}>
+      {/* To Whom I Let Go Page Link */}
+      <Link to="/to-whom-i-let-go" className="image-link" style={{ display: 'block', margin: '0 auto', position: 'relative' }}>
+        <img src={ToWhomILetGoStillImage} alt="To Whom I Let Go Still" className="narrative-image" />
+        <div className="image-title">To Whom I Let Go</div>
+      </Link>
+      
       {/* Please Hold Page Link */}
-      <Link to="/please-hold" className="image-link" style={{ display: 'block', margin: '0 auto', position: 'relative' }}>
+      <Link to="/please-hold" className="image-link" style={{ display: 'block', margin: '30px auto 0', position: 'relative' }}>
         <img src={PleaseHoldStillImage} alt="Please Hold Still" className="narrative-image" />
         <div className="image-title">Please Hold</div>
       </Link>

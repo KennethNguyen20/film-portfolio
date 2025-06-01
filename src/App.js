@@ -20,6 +20,7 @@ import TheMothPage from './components/TheMothPage';
 import VMagWater from './components/VMagWater';
 import HotelFiction from './components/HotelFiction';
 import PleaseHoldPage from './components/PleaseHoldPage';
+import ToWhomILetGo from './components/ToWhomILetGo'; // Assuming you have this component
 
 function App() {
   useEffect(() => {
@@ -48,6 +49,7 @@ function App() {
           <Route path='/fish-out-of-water' element={<VMagWater/>}/>
           <Route path='/hotel-fiction' element={<HotelFiction/>}/>
           <Route path='/please-hold' element={<PleaseHoldPage/>}/>
+          <Route path='/to-whom-i-let-go' element={<ToWhomILetGo/>}/>
           
         </Routes>
         <BottomBar/>
