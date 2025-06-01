@@ -2,12 +2,19 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import ISeeYouStillImage from '../assets/images/ISeeYouStill.jpg';
 import BreatheStillImage from '../assets/images/BreatheStill.jpg';
+import PleaseHoldStillImage from '../assets/images/PleaseHoldStill.jpg';
 
 function NarrativePage() {
   return (
     <div style={{ textAlign: 'center', marginTop: '30px', fontFamily: 'Futura, sans-serif' }}>
+      {/* Please Hold Page Link */}
+      <Link to="/please-hold" className="image-link" style={{ display: 'block', margin: '0 auto', position: 'relative' }}>
+        <img src={PleaseHoldStillImage} alt="Please Hold Still" className="narrative-image" />
+        <div className="image-title">Please Hold</div>
+      </Link>
+      
       {/* Breathe Page Link */}
-      <Link to="/breathe" className="image-link" style={{ display: 'block', margin: '0 auto', position: 'relative' }}>
+      <Link to="/breathe" className="image-link" style={{ display: 'block', margin: '30px auto 0', position: 'relative' }}>
         <img src={BreatheStillImage} alt="Breathe Still" className="narrative-image" />
         <div className="image-title">Breathe</div>
       </Link>
@@ -32,7 +39,7 @@ function NarrativePage() {
           }
 
           .narrative-image {
-            max-width: 80%;
+            max-width: 50%;
             width: auto;
             height: auto;
             display: block;

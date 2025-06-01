@@ -19,6 +19,7 @@ import JetsweatPage from './components/Jetsweat';
 import TheMothPage from './components/TheMothPage';
 import VMagWater from './components/VMagWater';
 import HotelFiction from './components/HotelFiction';
+import PleaseHoldPage from './components/PleaseHoldPage';
 
 function App() {
   useEffect(() => {
@@ -46,6 +47,7 @@ function App() {
           <Route path='/themoth' element={<TheMothPage/>}/>
           <Route path='/fish-out-of-water' element={<VMagWater/>}/>
           <Route path='/hotel-fiction' element={<HotelFiction/>}/>
+          <Route path='/please-hold' element={<PleaseHoldPage/>}/>
           
         </Routes>
         <BottomBar/>

@@ -20,7 +20,7 @@ function CommercialPage() {
   };
 
   const imageStyle = {
-    width: '800px', // Set a fixed width for larger images
+    width: '700px', // Set a fixed width for larger images
     height: 'auto',
   };
 
