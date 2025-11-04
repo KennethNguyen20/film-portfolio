@@ -5,7 +5,7 @@ import ToWhomILetGoStill from '../assets/images/ToWhomILetGoStill.jpg';
 function Breathe() {
   const title = "TO WHOM I LET GO (2025)";
   const subtitle = "In Production, Short Film";
-  const description = "A heartbroken man drifts through the quiet beauty of Tuscany, Italy, struggling to make peace with a love that slipped away and the silence that lingers in its place.";
+  const description = "In the quiet streets of Siena, a young man confronts the weight of his past and the silence he’s built around himself, forcing him to face a truth he’s long avoided.";
   const imageSrc = ToWhomILetGoStill;
 
   const credits = [
