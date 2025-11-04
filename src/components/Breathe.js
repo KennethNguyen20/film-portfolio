@@ -23,6 +23,10 @@ function Breathe() {
     { role: "Mother", name: "LATOYA JACKSON" }
   ];
 
+  const festivals = [
+    { name: "Richmond Indie Film Festival 2025", note: "Official Selection" }
+  ];
+
   return (
     <div>
       <VideoLinkPageTemplate
@@ -33,6 +37,14 @@ function Breathe() {
       />
       
       <div style={{ margin: '20px auto', fontFamily: 'Futura', maxWidth: '800px', color: 'black', textAlign: 'left' }}>
+        <h3>FESTIVALS</h3>
+        <div style={{ fontSize: '16px', lineHeight: '2' }}>
+          {festivals.map((festival, index) => (
+            <div key={index}>
+              {festival.name}, <span style={{ fontStyle: 'italic' }}>{festival.note}</span>
+            </div>
+          ))}
+        </div>
         <h3>CREDITS</h3>
         <div style={{ fontSize: '16px' }}>
           {credits.map((credit, index) => (

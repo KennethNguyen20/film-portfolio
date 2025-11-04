@@ -1,6 +1,7 @@
 import React from 'react';
 import aboutPic from '../assets/images/aboutPic.JPG'; 
 import bolexPic from '../assets/images/bolex.jpg'; 
+import KennethRFN from '../assets/images/Kenneth Jaden Rob.jpg';
 import './About.css'; 
 
 function About() {
@@ -9,6 +10,9 @@ function About() {
       <div className="about-images">
         <div className="about-image">
           <img src={aboutPic} alt="Kenneth Nguyen" />
+        </div>
+        <div className="about-image">
+          <img src={KennethRFN} alt="Kenneth Nguyen" />
         </div>
         <div className="about-image">
           <img src={bolexPic} alt="Kenneth Nguyen" />
@@ -31,6 +35,7 @@ function About() {
         <h3>AWARDS</h3>
         
           <p>Virginia Museum of Fine Arts Fellowship 2025-2026</p>
+          <p>Richmond Indie Film Festival 2025, <em>Official Selection</em> for "To Whom I Let Go"</p>
           <p>Tokyo International Short Film Festival 2024, <em>Official Selection</em> for “I See You”</p>
           <p>Cinéma Royale International Film Festival 2024, <em>Official Selection</em> for “I See You”</p>
         
